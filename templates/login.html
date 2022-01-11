@@ -3,14 +3,12 @@
 {% block content %}
 <div class="container">
   <form class="form-sign" method="post">{% csrf_token %}
-    <img class="mb-4" src="/docs/4.4/assets/brand/bootstrap-solid.svg"
-    alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weigth-normal">Please sign up</h1>
     {% if error %}
     {{error}}
     {% endif %}
     <label for="inputEmail" class="sr-only">Username</label>
-    <input type="text" id="inputEmail" class="form-control" placeholder="username" name="Username_data" required autofocus>
+    <input type="text" id="inputEmail" class="form-control" placeholder="username" name="username_data" required autofocus>
     <label for="password" class="sr-only">Password</label>
     <input type="password" id="inputpassword" class="form-contorl" placeholder="Password" name="password_data" required>
     <div class="checkbox mb-3">
